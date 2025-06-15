@@ -37,7 +37,6 @@ if st.button("Generate Response"):
             try:
                 prompt = build_prompt(role_key, user_input)
                 response = client.text_generation(prompt, max_new_tokens=500, temperature=0.7)
-                st.success("Response:")
-                st.markdown(f"```\n{response.strip()}\n```")
+                st.text_area("Response", response.strip(), height=300)
             except Exception as e:
                 st.error(f"❌ Error: {e}")
