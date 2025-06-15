@@ -1,15 +1,11 @@
 import streamlit as st
 from huggingface_hub import InferenceClient
-headers = {
-    "authorization": st.secrets["HUGGINGFACEHUB_API_TOKEN"],
-    "content-type" : "application/json"
-}
 # Hugging Face API Token (keep it secure!)
 
 # Connect to Zephyr hosted model
 client = InferenceClient(
     model="HuggingFaceH4/zephyr-7b-beta",
-    token=HUGGINGFACEHUB_API_TOKEN
+    token=st.secrets["HUGGINGFACEHUB_API_TOKEN"]
 )
 
 # Prompt builder
