@@ -7,6 +7,9 @@ A smart, interactive assistant built using **Streamlit** and **Hugging Face Infe
 
 [![Open in Streamlit](https://static.streamlit.io/badges/streamlit_badge_black_white.svg)](https://mini-copilot-hr-coding-assistant.streamlit.app/)
 
+
+📽️ [Click to watch the demo video](demo.mp4)
+
 ---
 
 ## 🚀 Features
